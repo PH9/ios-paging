@@ -16,23 +16,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-s6-QUz">
-                                <rect key="frame" x="16" y="104" width="382" height="698"/>
+                                <rect key="frame" x="16" y="104" width="382" height="690"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDN-MZ-PXi">
+                                <rect key="frame" x="16" y="802" width="382" height="60"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Nbj-e0-916"/>
+                                </constraints>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="bDN-MZ-PXi" secondAttribute="bottom" id="0fv-aW-ARk"/>
                             <constraint firstItem="TBa-s6-QUz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="F1M-eQ-IUd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TBa-s6-QUz" secondAttribute="bottom" constant="60" id="QLw-JW-WMD"/>
+                            <constraint firstItem="bDN-MZ-PXi" firstAttribute="top" secondItem="TBa-s6-QUz" secondAttribute="bottom" constant="8" id="RzY-na-lEU"/>
                             <constraint firstItem="TBa-s6-QUz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cVY-eL-DoK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDN-MZ-PXi" secondAttribute="trailing" constant="16" id="dHy-WZ-7FD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBa-s6-QUz" secondAttribute="trailing" constant="16" id="qMY-WH-YIz"/>
+                            <constraint firstItem="bDN-MZ-PXi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="taq-kd-sUC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57" y="138"/>
+            <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="k4L-SJ-imG">
