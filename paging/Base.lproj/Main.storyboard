@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-s6-QUz">
-                                <rect key="frame" x="16" y="104" width="382" height="690"/>
+                                <rect key="frame" x="0.0" y="104" width="414" height="690"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDN-MZ-PXi">
                                 <rect key="frame" x="16" y="802" width="382" height="60"/>
@@ -27,6 +27,9 @@
                                 <state key="normal" title="SKIP">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KaI-Pu-lI1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -34,13 +37,17 @@
                             <constraint firstAttribute="bottomMargin" secondItem="bDN-MZ-PXi" secondAttribute="bottom" id="0fv-aW-ARk"/>
                             <constraint firstItem="TBa-s6-QUz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="F1M-eQ-IUd"/>
                             <constraint firstItem="bDN-MZ-PXi" firstAttribute="top" secondItem="TBa-s6-QUz" secondAttribute="bottom" constant="8" id="RzY-na-lEU"/>
-                            <constraint firstItem="TBa-s6-QUz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cVY-eL-DoK"/>
+                            <constraint firstItem="TBa-s6-QUz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cVY-eL-DoK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bDN-MZ-PXi" secondAttribute="trailing" constant="16" id="dHy-WZ-7FD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBa-s6-QUz" secondAttribute="trailing" constant="16" id="qMY-WH-YIz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TBa-s6-QUz" secondAttribute="trailing" id="qMY-WH-YIz"/>
                             <constraint firstItem="bDN-MZ-PXi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="taq-kd-sUC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="pageView" destination="TBa-s6-QUz" id="N3C-xG-lAe"/>
+                        <outlet property="skipButton" destination="bDN-MZ-PXi" id="O2W-hV-m8H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
