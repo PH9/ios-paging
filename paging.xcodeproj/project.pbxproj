@@ -62,9 +62,9 @@
 			children = (
 				162186052378FCA4002BAC3C /* Info.plist */,
 				162185F72378FCA3002BAC3C /* AppDelegate.swift */,
-				162185F92378FCA3002BAC3C /* SceneDelegate.swift */,
-				16F636F92379070F00C3347C /* PageViewController.swift */,
 				16F636F7237903E800C3347C /* DataViewController.swift */,
+				16F636F92379070F00C3347C /* PageViewController.swift */,
+				162185F92378FCA3002BAC3C /* SceneDelegate.swift */,
 				162185FB2378FCA3002BAC3C /* ViewController.swift */,
 				162186002378FCA4002BAC3C /* Assets.xcassets */,
 				162186022378FCA4002BAC3C /* LaunchScreen.storyboard */,
