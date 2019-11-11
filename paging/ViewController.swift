@@ -8,10 +8,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         skipButton.layer.cornerRadius = 8
-
     }
 
     @IBAction func skipButtonTapped(_ sender: Any) {
+        print("skip tapped 👍👍👍")
     }
 }
 
